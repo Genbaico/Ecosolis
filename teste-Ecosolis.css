@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:"Quicksand", Arial, sans-serif;
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+.container{
+     max-width: 1280px;
+     margin: auto;
+}
+
+.flex{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+}
+
+header{
+     width: 100%;
+     padding: 60px 4%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     transition: 1s;
+     z-index: 1;
+}
+
+.bibi-brightness-high-fill{
+     color: #FFD700;
+}
+
+header ul{
+     list-style-type: none;    
+}
+
+header ul li{
+     display: inline-block;
+     margin: 0 40px;
+}
+
+header ul li a{
+     color: #fff;
+     text-decoration: none;
+     width: 100px;
+     height: 40px;
+     border: 0;
+     position: relative;
+}
+
+
+header ul li a::after{
+     content: "";
+     width: 0%;
+     height: 1px;
+     background-color: #ffffff;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     transition: 0.5s ease-in-out;
+}
+
+header ul li a:hover::after{
+     width: 100%;
+}
+
+
+header.rol{
+     background-color: #b09600;
+     padding: 20px;
+}
+
+header.rol a{
+     color: #000;
+}
+
+header.rol a::after{
+     background-color: #000;
+     content: "";
+     width: 0%;
+     height: 1px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     transition: 0.5s ease-in-out
+}
+
+header.rol .bibi-brightness-high-fill{
+     color: #000;
+}
+
+
+.menu{
+     height: 100vh;
+     background-color: #000;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.menu h1{
+     font-size: 4em;
+     font-weight: 200;
+     color: #fff;
+}
+
+
+
+.typed-text{
+     color: #FFD700;
+}
+
+
+.cont1{
+     max-width: 1080px;
+     margin: 0 auto;
+}
+
+.imagemgrupo{
+     display: block;
+     margin: 0 auto;
+     border: 1px solid #ffffff;
+     padding: 3px;
+     max-width: 90%;
+     box-shadow: 0 0 10px #000;
+     height: 450px;
+}
+.equipe-cont{
+     display: flex;
+     justify-content: space-between;
+}
+
+
+.equipe{
+     display: flex;
+     justify-content: space-evenly;
+     flex: 1;
+     margin: 0 10px;     
+}
+
+.equipe ul{
+     list-style-type: none;
+     padding: 0;
+}
+
+
+section{
+     padding: 0px 0%;
+     border-bottom: 1px solid #ccc;
+}
+
+section h2{
+     font-size: 2em;
+     margin-bottom: 25px;
+}
+ 
+section p{
+     font-size: 20px;
+}
+
+section ul li{
+     font-size: 20px;
+}
+
+
+main{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 20px;  
+}
+
+
+main section{ 
+     background-color: #000000;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+     margin: 10px;
+     padding: 20px;
+     text-align: center;
+     width: 700px;
+}
+
+main section h2{
+     margin-top: 0;
+	color: #ffffff;
+}
+
+main button{
+     width: 100px;
+     height: 40px;
+     border: 0;
+     background-color: #000;
+     color: #FFD700;
+     cursor: pointer;
+}
+
+main button:hover{
+     transition: 2s;
+     background: rgb(31, 31, 31);
+}
+
+main section p{
+     color: #ffffff;
+}
+
+
+.produto-sec{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.imagem-produto{
+     max-width: 300px;
+     width: 100%;
+     height: auto;
+     margin-right: 20px;
+}
+
+.produtodetalhes{
+     flex: 1;
+}
+
+
+footer {
+     text-align: center;
+     padding: 10px;
+     background-color: #000;
+     color: #FFD700;
+}
+
+.footer-container {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+
+}
+ 
+.contatos, .ende {
+     flex: 1;
+     margin: 0 10px;
+     font-size: 15px;
+}
+ 
+ 
+ 
+footer p {
+     margin: 5px 0;
+}
+
+
+::-webkit-scrollbar{
+     width: 2px;
+     background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb{
+     border-radius: 100%;
+     background-color: #000000;
+}
+
+::-webkit-scrollbar-track{
+     background: transparent;
+}
